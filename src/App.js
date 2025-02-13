@@ -66,19 +66,19 @@ function App() {
 
   return (
     <div>
-      <div className="bg-blue-950 text-white text-center">
+      <div className="bg-pink-900 text-white text-center">
         <h1 className="text-2xl font-medium px-5 py-3">BulkMail</h1>
       </div>
 
-      <div className="bg-blue-800 text-white text-center">
-        <h1 className="font-medium px-5 py-3">We can help your business with sending multiple emails at once</h1>
+      <div className="bg-pink-800 text-white text-center">
+        <h1 className="font-medium px-5 py-3">Our service enables your business to efficiently send multiple emails simultaneously</h1>
       </div>
 
-      <div className="bg-blue-600 text-white text-center">
+      <div className="bg-pink-600 text-white text-center">
         <h1 className="font-medium px-5 py-3">Drag and Drop</h1>
       </div>
 
-      <div className="bg-blue-400 flex flex-col items-center text-black px-5 py-3">
+      <div className="bg-pink-400 flex flex-col items-center text-black px-5 py-3">
         <textarea onChange={handleMessage} value={message} className="w-[80%] h-32 py-2 outline-none px-2 border border-black rounded-md" placeholder="Enter the email text... "></textarea>
 
         <div>
@@ -87,14 +87,14 @@ function App() {
 
         <p>Total Emails in th file: {emailList.length}</p> {/*how many email have in emailList it will shown */}
 
-        <button onClick={send} className="bg-blue-950 py-2 px-2 mt-2 text-white font-medium rounded-md w-fit">{status?"Sending...":"Send"}</button>
+        <button onClick={send} className="bg-pink-950 py-2 px-2 mt-2 text-white font-medium rounded-md w-fit">{status?"Sending...":"Send"}</button>
 
       </div>
 
-      <div className="bg-blue-300 text-white text-center p-8">
+      <div className="bg-pink-300 text-white text-center p-8">
       </div>
 
-      <div className="bg-blue-200 text-white text-center p-8">
+      <div className="bg-pink-200 text-white text-center p-8">
       </div>
 
     </div>
