@@ -52,7 +52,7 @@ function App() {
   function send(){ // here i use axios to send req in "/sendemail"(page),{msg:message} What message will be sent? The message(variable) value
     // default axios is get
     setstatus(true) // when btn click btn status was change into sending
-    axios.post("http://localhost:5000/sendemail",{msg:message,emailList:emailList}) 
+    axios.post("https://bulkmail-mernapp.onrender.com/api/sendemail",{msg:message,emailList:emailList}) 
     // The request will go to the send email page along with the message and emailList
     .then(function(data){
       if(data.data === true){
